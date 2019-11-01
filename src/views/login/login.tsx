@@ -10,15 +10,17 @@ const Login: React.FunctionComponent = () => {
       <div className="login_bottom">
         <div className="login_frame">
           <div className="login_username">
-            <input/>
+            <span/>
+            <input type="text"/>
           </div>
           <div className="login_password">
-            <input/>
+            <span/>
+            <input type="text"/>
           </div>
         </div>
         <div className="login_options">
-          <p>忘记密码</p>
-          <p>注册账号</p>
+          <a>忘记密码</a>
+          <a>注册账号</a>
         </div>
       </div>
     </div>
