@@ -1,11 +1,11 @@
-import * as React from 'react';
-import './App.css';
+import * as React from 'react'
+import './App.scss'
+import Routes from './routes/index'
 
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-      </div>
+      <Routes/>
     );
   }
 }

@@ -1,0 +1,107 @@
+@import '../../common/scss/index.scss';
+$length: 30vw;
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  .login_top {
+    height: 40vh;
+    .login_avatar {
+      height: $length;
+      width: $length;
+      border-radius: 50%;
+      position: relative;
+      top: 0;
+      background-color: greenyellow;
+      animation: move 1s ease-out;
+      animation-fill-mode: forwards;
+      z-index: 1000;
+    }
+  }
+  .login_bottom {
+    height: 60vh;
+    width: 100vw;
+    position: relative;
+    background-color: grey;
+    animation: bottom 1s ease-out;
+    animation-fill-mode: forwards;
+    &::before {
+      position: absolute;
+      content: '';
+      height: 15vh;
+      width: 100%;
+      top: -14vh;
+      background-color: grey;
+      border-radius: 50% 50% 0 0;
+    }
+    .login_frame {
+      height: 25vh;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      margin-top: 5vw;
+      padding-left: 13vw;
+      padding-right: 13vw;
+      animation: show 2s ease-in;
+      .login_username, .login_password {
+        height: 13vw;
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: red;
+        border-radius: 3vw;
+        &::before {
+          position: absolute;
+          left: 2vw;
+          content: '';
+          height: 8vw;
+          width: 8vw;
+          background-color: black;
+        }
+        input {
+          position: absolute;
+          left: 12vw;
+          display: block;
+          height: 8vw;
+          width: 80%;
+          font-size: 5vw;
+        }
+      }
+    }
+    .login_options {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 10vw 0 10vw;
+      animation: show 2s ease-in;
+    }
+  }
+}
+
+@keyframes move {
+  from {
+    top: 0;
+  }
+  to {
+    top: 18vh;
+  }
+}
+
+@keyframes bottom {
+  from {
+    bottom: -10vh;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
