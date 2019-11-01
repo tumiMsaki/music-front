@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Link } from 'react-router-dom'
 import './login.scss'
 
 const Login: React.FunctionComponent = () => {
@@ -20,7 +21,7 @@ const Login: React.FunctionComponent = () => {
         </div>
         <div className="login_options">
           <a>忘记密码</a>
-          <a>注册账号</a>
+          <Link to="/regist">账号注册</Link>
         </div>
       </div>
     </div>

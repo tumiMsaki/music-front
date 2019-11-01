@@ -1,4 +1,4 @@
-// @import '../../common/scss/index.scss';
+@import '../../common/scss/index.scss';
 .container {
   height: 100%;
   display: flex;
@@ -69,12 +69,10 @@
         }
         input {
           position: absolute;
-          display: block;
           height: 0.55rem;
           width: 83%;
           font-size: 0.25rem;
           border-radius: 0.1rem;
-          border: none;
           padding-left: 0.7rem;
           transition: 0.2s all linear;
           &:focus {
@@ -106,12 +104,10 @@
         }
         input {
           position: absolute;
-          display: block;
           height: 0.55rem;
           width: 83%;
           font-size: 0.25rem;
           border-radius: 0.1rem;
-          border: none;
           padding-left: 0.7rem;
           transition: 0.2s all linear;
           &:focus {
