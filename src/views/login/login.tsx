@@ -18,6 +18,9 @@ const Login: React.FunctionComponent = () => {
             <span/>
             <input type="text"/>
           </div>
+          <div className="login_btn">
+            <p>登陆</p>
+          </div>
         </div>
         <div className="login_options">
           <a>忘记密码</a>
