@@ -9,7 +9,7 @@
     "allowJs": true,
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDir": "src",
+    "rootDir": "./src",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -20,13 +20,15 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true
   },
-  "exclude": [
-    "node_modules",
-    "build",
-    "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest",
-    "src/App.tsx"
+  // "exclude": [
+  //   "node_modules",
+  //   "build",
+  //   "scripts",
+  //   "acceptance-tests",
+  //   "webpack",
+  //   "jest"
+  // ],
+  "include": [
+    "./src/**/*"
   ]
 }
