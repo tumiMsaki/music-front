@@ -1,7 +1,11 @@
 import * as React from 'react'
 import './index.scss'
+import store from '../../store'
 
 const Carousel: React.FC = () => {
+  store.subscribe(()=> {
+    console.log()
+  })
   return <>
     <div className="poster_app">
       <div className="poster_pic"/>

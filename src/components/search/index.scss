@@ -1,8 +1,13 @@
 @import '../../common/scss/index';
 
 .search_app {
-  height: 5vh;
+  height: 8vh;
   width: 100%;
   border: 1px solid red;
   border-radius: 0.1rem;
+  input {
+    height: 8vh;
+    width: 100%;
+    font-size: 0.4rem;
+  }
 }
