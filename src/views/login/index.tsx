@@ -1,5 +1,5 @@
 import * as React from 'react'
-import './login.scss'
+import './index.scss'
 
 function useDelayUnmount(isMounted: boolean, delayTime: number) {
   const [ shouldRender, setShouldRender ] = React.useState(false);
