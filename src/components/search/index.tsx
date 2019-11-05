@@ -1,13 +1,15 @@
 import * as React from 'react'
 import './index.scss'
-import action from '../../actions'
+import input from '../../actions/input'
+import number from '../../actions/number'
 import store from '../../store'
 
 const Search: React.FC = (props) => {
   const [val, setVal] = React.useState()
   
   React.useEffect(() => {
-    store.dispatch(action.search(val))
+    store.dispatch(input.search(val))
+    store.dispatch(number.add())
   },[val])
 
   const handleInput = (e:React.ChangeEvent<HTMLInputElement>) => {

@@ -1,18 +1,11 @@
-import * as TYPE from '../types'
+import { combineReducers } from 'redux';
+import add from './number'
+import input from './input'
 
-const preState = {
-  text: null
-}
+const Reducer = combineReducers({
+  add,
+  input
+})
 
-const reducer = (state = preState, action: any) => {
-  switch(action.type) {
-    case TYPE.SEARCH: 
-      return {
-        ...state,
-        text: action.text
-      }
-      default: return state;
-  }
-}
+export default Reducer
 
-export default reducer

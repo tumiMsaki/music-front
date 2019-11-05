@@ -4,7 +4,7 @@ import store from '../../store'
 
 const Carousel: React.FC = () => {
   store.subscribe(()=> {
-    console.log()
+    console.log(store.getState())
   })
   return <>
     <div className="poster_app">
