@@ -4,9 +4,6 @@ import './index.scss'
 import store from '../../store'
 
 const Carousel: React.FC = () => {
-  store.subscribe(()=> {
-    console.log(count.getState().input.text)
-  })
   const count = useStore()
   return <>
     <div className="poster_app">
