@@ -1,16 +1,19 @@
 import * as React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Login from '../views/login'
-import Home from '../views/music_home'
-
+import { Home } from '../views/Home'
+import { Search } from '../views/Search'
+import { Recommend } from '../views/Recommend'
+import { Rank } from '../views/Rank'
 
 const Routes: React.FunctionComponent = () => {
   return <div className="App">
     <BrowserRouter>
         <Switch>
-          <Route path='/login' exact={true} component={Login}/>
-          <Route path='/home' component={Home}/>
+          <Home/>
         </Switch>
+        <Route path="/recommend" component={Recommend}/>
+        <Route path="/rank" component={Rank}/>
+        <Route path="/search" component={Search}/>
     </BrowserRouter>
   </div>
 }

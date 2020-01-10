@@ -1,10 +1,10 @@
 import * as React from 'react'
-import Routes from './routes/index'
+import Route from './routes'
 
 class App extends React.Component {
   public render() {
     return (
-      <Routes/>
+      <Route/>
     );
   }
 }
