@@ -1,9 +1,9 @@
 import { axiosInstance } from './config.js'
 
-export const getBannerRequset = () => {
-  return axiosInstance.get('')
+export const getBannerRequest = () => {
+  return axiosInstance.get('/banner')
 }
 
-export const getRecommendRequset = () => {
-  return axiosInstance.get('')
+export const getRecommendRequest = () => {
+  return axiosInstance.get('/personalized')
 }
